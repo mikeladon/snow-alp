@@ -1,0 +1,55 @@
+body {
+	margin: 0px;
+}
+
+.container {
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-desktop@1x.jpg"), url("../img/background-mask-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1290px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.reset-indents {
+	margin: 0px;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width: 1199px) {
+	.container {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-tablet@1x.jpg"), url("../img/background-mask-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+	
+	.wrapper {
+		max-width: 1199px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-mobile@1x.jpg"), url("../img/background-mask-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+	.wrapper {
+		max-width: 767px;
+	}
+	
+}

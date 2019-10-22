@@ -1,0 +1,395 @@
+.details {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: -4px;
+
+	justify-content: space-between;
+}
+
+.details__item {
+	color: #ffffff;
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 84px;
+
+	&:hover .details__schedule,
+	&:hover .mail-address,
+	&:hover .contact-button {
+		color: #ffe640;
+	}
+}
+
+.item-contact {
+	margin-right: -5px;
+}
+
+.details__schedule,
+.mail-address {
+	color: #ffffff;
+	font-family: "Montserrat Semi-Bold";
+	font-weight: 600;
+}
+
+.contact-button {
+	color: #50b1d7;
+	font-family: "Montserrat Semi-Bold";
+	font-weight: 600;
+	border: none;
+	border-bottom: 1px dotted #50b1d7;
+
+	cursor: pointer;
+
+	background: transparent;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+.header__toggle {
+	display: none;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 278px;
+}
+
+.logo-info {
+	width: 106px;
+
+	color: #ffffff;
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.nav-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 580px;
+	margin-top: -26px;
+  margin-left: -10px;
+}
+
+.nav-list__item {
+	color: #ffffff;
+	font-family: "Montserrat Semi-Bold";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 84px;
+
+	cursor: pointer;
+
+	&:hover {
+		color: #ffe640;
+	}
+}
+
+.contact-phone {
+	margin-top: -8px;
+}
+
+.contact-phone__link {
+	font-family: "Montserrat Semi-Bold";
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 48px;
+	color: #ffffff;
+
+	&:hover .phone-colored {
+		color: #ffe640;
+	}
+}
+
+.phone-colored {
+	color: #50b1d7;
+}
+
+.menu-hidden {
+		display: none;
+}
+
+@media (max-width: 1199px) {
+	.details {
+		display: none;
+	}
+
+	.nav-list {
+		display: none;
+	}
+
+	.nav {
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 36px;
+	}
+
+	.header {
+		margin-left: 60px;
+		width: 255px;
+	}
+
+	.header__toggle {
+    display: block;
+    position: absolute;
+    left: 40px;
+    width: 26px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 3px;
+      box-shadow: 0 7px 0 0 #ffffff, 0 13px 0 0 #ffffff, 0 19px 0 0 #ffffff;
+    }
+  }
+
+  .contact-phone__link {
+  	font-size: 30px;
+		font-weight: 400;
+		line-height: 48px;
+  }
+
+  /*Планшетное меню*/
+
+	.mobile-menu {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		margin-top: -120px;
+		width: 100%;
+
+		background: #ffffff;
+
+		z-index: 3;
+	}
+
+	.mobile-nav-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 105px;
+		padding-bottom: 45px;
+	}
+
+
+	.mobile-nav-list__item {
+		font-family: "Montserrat Semi-Bold";
+		font-size: 16px;
+		font-weight: 400;
+		color: #000000;
+		line-height: 40px;
+
+		cursor: pointer;
+
+		&:hover {
+			color: #ffe640;
+		}
+	}
+
+	.mobile-details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+
+	.mobile-details__item {
+		font-family: "Montserrat";
+		font-size: 12px;
+		font-weight: 400;
+		color: #000000;
+		line-height: 17px;
+		padding-bottom: 20px;
+
+		&:hover .details__schedule,
+		&:hover .mail-address {
+			color: #ffe640;
+		}
+	}
+
+	.contact-button {
+		&:hover {
+			color: #ffe640;
+		}
+	}
+
+	.mobile-details__schedule {
+		font-family: "Montserrat Semi-Bold";
+		font-weight: 600;
+		color: #000000;
+	}
+
+	.mail-address {
+		color: #50b1d7;
+    border: 0;
+    border-bottom: 1px dotted #50b1d7;
+	}
+
+  .menu-close {
+		position: absolute;
+	  top: 60px;
+	  right: 40px;
+	  width: 22px;
+	  height: 22px;
+	  font-size: 0;
+	  background-color: transparent;
+	  border: 0;
+	  cursor: pointer;
+	}
+
+	.menu-close::before {
+		content: "";
+	  position: absolute;
+	  top: 10px;
+	  left: 2px;
+	  width: 21px;
+	  height: 3px;
+	  background-color: #000000;
+	  transform: rotate(45deg);
+	}
+
+	.menu-close::after {
+		content: "";
+	  position: absolute;
+	  top: 10px;
+	  left: 2px;
+	  width: 21px;
+	  height: 3px;
+	  background-color: #000000;
+	  transform: rotate(-45deg);
+	}
+
+	.mobile-contact {
+		position: relative;
+		padding: 12px 135px 12px 5px;
+		margin-bottom: 110px;
+		align-self: center;
+
+		border-radius: 10px;
+		border: none;
+		background: #000000;
+		color: #ffffff;
+
+		cursor: pointer;
+
+		&:hover {
+			background-color: #484848;
+		}
+	}
+
+	.mobile-contact span {
+		font-family: "Montserrat Semi-Bold";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+		opacity: 0.9;
+	}
+
+	.mobile-contact::before {
+		content: "";
+		position: absolute;
+
+		top: 6px;
+		right: 5px;
+		width: 125px;
+		height: 34px;
+
+		background: url("../img/whatsapp-logo.png");
+		background-repeat: no-repeat;
+	}
+
+	.menu-hidden {
+		display: none;
+	}
+
+  /*Планшетное меню*/
+}
+
+@media (max-width: 767px) {
+	.nav {
+		margin-top: 31px;
+	}
+
+	.header {
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.header__toggle {
+		left: 5%;
+    top: 81px;
+	}
+
+	.logo-info {
+		width: 130px;
+		margin-top: -3px;
+
+		font-family: "Montserrat";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+
+	.contact-phone {
+		margin-left: auto;
+		margin-top: 4px;
+	}
+
+	.contact-phone__link {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 48px;
+	}
+
+	/*Мобильное меню*/
+
+	.mobile-menu {
+		width: 98%;
+	}
+
+	.mobile-details {
+		align-items: flex-start;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.mobile-nav-list {
+		flex-direction: column;
+		width: 85%;
+	}
+
+	.mobile-contact {
+		align-self: flex-start;
+		margin-left: 7%;
+	}
+
+	.menu-hidden {
+		display: none;
+	}
+	/*Мобильное меню*/
+}
+
