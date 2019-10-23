@@ -15,9 +15,13 @@
 	line-height: 84px;
 
 	&:hover .details__schedule,
-	&:hover .mail-address,
+	&:hover .mail-address {
+		color: #ffe640;
+	}
+
 	&:hover .contact-button {
 		color: #ffe640;
+		border-bottom: 1px dotted #ffe640;
 	}
 }
 
@@ -134,7 +138,7 @@
 	.nav {
 		width: 90%;
 		margin: 0 auto;
-		margin-top: 36px;
+		padding-top: 36px;
 	}
 
 	.header {
@@ -172,11 +176,12 @@
   /*Планшетное меню*/
 
 	.mobile-menu {
+		position: absolute;
 		display: flex;
 		flex-direction: column;
-		position: relative;
-		margin-top: -120px;
-		width: 100%;
+		top: 0px;
+		left: 0px;
+		max-width: 300px;
 
 		background: #ffffff;
 
@@ -185,12 +190,11 @@
 
 	.mobile-nav-list {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		flex-direction: column;
 		width: 70%;
 		margin: 0 auto;
-		padding-top: 105px;
-		padding-bottom: 45px;
+		padding-top: 50px;
+		padding-bottom: 40px;
 	}
 
 
@@ -212,7 +216,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 50%;
+		width: 70%;
 		margin: 0 auto;
 	}
 
@@ -225,9 +229,10 @@
 		line-height: 17px;
 		padding-bottom: 20px;
 
-		&:hover .details__schedule,
+		&:hover .contact-button,
 		&:hover .mail-address {
 			color: #ffe640;
+			border-bottom: 1px dotted #ffe640;
 		}
 	}
 
@@ -251,7 +256,7 @@
 
   .menu-close {
 		position: absolute;
-	  top: 60px;
+	  top: 40px;
 	  right: 40px;
 	  width: 22px;
 	  height: 22px;
@@ -285,7 +290,7 @@
 
 	.mobile-contact {
 		position: relative;
-		padding: 12px 135px 12px 5px;
+		padding: 12px 125px 12px 20px;
 		margin-bottom: 110px;
 		align-self: center;
 
@@ -303,7 +308,7 @@
 
 	.mobile-contact span {
 		font-family: "Montserrat Semi-Bold";
-		font-size: 18px;
+		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
 		opacity: 0.9;
@@ -313,10 +318,10 @@
 		content: "";
 		position: absolute;
 
-		top: 6px;
-		right: 5px;
-		width: 125px;
-		height: 34px;
+		top: 11px;
+		right: 20px;
+		width: 97px;
+		height: 26px;
 
 		background: url("../img/whatsapp-logo.png");
 		background-repeat: no-repeat;
@@ -331,7 +336,7 @@
 
 @media (max-width: 767px) {
 	.nav {
-		margin-top: 31px;
+		padding-top: 31px;
 	}
 
 	.header {
@@ -367,10 +372,6 @@
 
 	/*Мобильное меню*/
 
-	.mobile-menu {
-		width: 98%;
-	}
-
 	.mobile-details {
 		align-items: flex-start;
 		width: 85%;
@@ -378,7 +379,6 @@
 	}
 
 	.mobile-nav-list {
-		flex-direction: column;
 		width: 85%;
 	}
 

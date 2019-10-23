@@ -39,3 +39,36 @@
 	bottom: 60px;
 	left: 268px;
 }
+
+@media (max-width: 767px) {
+	.success {
+		position: absolute;
+		left: calc(50% - 150px);
+	}
+
+	.success__container {
+		padding-top: 43px;
+		padding-bottom: 100px;
+	}
+
+	.success__heading {
+		width: 265px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.success__text {
+		width: 250px;
+
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	.success-icon {
+		position: absolute;
+		bottom: 30px;
+		left: 130px;
+	}
+	
+}

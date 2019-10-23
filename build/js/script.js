@@ -31,7 +31,6 @@ let onOverlayClick = function (evt) {
 
   if(!document.querySelector(".mobile-menu").contains(evt.target) && !document.querySelector(".mobile-menu").classList.contains("menu-hidden")) {
     document.querySelector(".mobile-menu").classList.add("menu-hidden");
-    body.style.overflow = "auto";
   }
 }
 
@@ -125,7 +124,6 @@ let closeMobileMenu = function (evt) {
   evt.preventDefault();
   if (!document.querySelector(".mobile-menu").classList.contains("menu-hidden")) {
     document.querySelector(".mobile-menu").classList.add("menu-hidden");
-    body.style.overflow = "auto";
   }
 }
 
@@ -133,7 +131,6 @@ let closeMobileMenu = function (evt) {
 document.querySelector(".header__toggle").addEventListener("click", function (evt) {
 	evt.preventDefault();
   document.querySelector(".mobile-menu").classList.remove("menu-hidden");
-  body.style.overflow = "hidden";
   closeMobMenuButton.addEventListener("click", closeMobileMenu);
   document.addEventListener("mousedown", onOverlayClick);
 });

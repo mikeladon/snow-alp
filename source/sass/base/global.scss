@@ -4,10 +4,12 @@ body {
 
 .container {
 	position: relative;
+	padding-left: 10px;
+  padding-right: 10px;
+
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-desktop@1x.jpg"), url("../img/background-mask-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 .link {
@@ -30,6 +32,9 @@ body {
 
 @media (max-width: 1199px) {
 	.container {
+	padding-left: 0px;
+  padding-right: 0px;
+
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-tablet@1x.jpg"), url("../img/background-mask-tablet@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
